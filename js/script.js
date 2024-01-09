@@ -26,7 +26,11 @@ window.onload = function () {
 
     if (window.scrollY == 0) {
       window.scrollTo({
+<<<<<<< HEAD
         top: 2952,
+=======
+        top: 2585,
+>>>>>>> 1d7e850070aa9af84bb2e21edc9601467071eaa8
         behavior: "smooth",
       });
     } else {
@@ -44,6 +48,7 @@ window.onload = function () {
     if (scTop > 0) {
       topBtnImg.classList.add("up");
     } else {
+<<<<<<< HEAD
       topBtnImg.classList.remove("up");
     }
   });
@@ -69,5 +74,18 @@ window.onload = function () {
 
     // 모달이 닫힐 때는 스크롤을 다시 활성화
     controlScroll(false);
+=======
+      // up = css에서 임의로 준 태그
+      topBtnImg.classList.remove("up");
+    }
+  });
+
+  // 안내창 스크립트
+  const body = document.querySelector("body");
+  const modal = document.querySelector(".modal-wrap");
+  modal.addEventListener("click", function () {
+    modal.style.display = "none";
+    fadeout(modal);
+>>>>>>> 1d7e850070aa9af84bb2e21edc9601467071eaa8
   });
 };
